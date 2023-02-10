@@ -1,0 +1,12 @@
+from flask import Flask
+
+@app.route("/<string:name>")
+def hello(name):
+	return "<h1>Hola,{}</h1>".format(name)	asd
+app = Flask(__name__)
+@app.route("/")
+def home():
+	return  "<h1>adfsda</h1>"
+
+if __name__ ==  "__main__":
+	app.run()
